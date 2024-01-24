@@ -2,7 +2,7 @@ class DynamicArray {
 
   constructor(defaultSize=4) {
 
-    // Your code here 
+    this.defaultSize = defaultSize;
 
   }
 
