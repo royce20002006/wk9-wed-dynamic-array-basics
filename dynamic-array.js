@@ -19,15 +19,9 @@ class DynamicArray {
 
 
 
-    for (let i = this.capacity - 1; i >= 0; i--) {
+    for (let i = this.length - 1; i >= 0; i--) {
+      this.data[i + 1] = this.data[i];
       
-
-
-      if (this.data[i] !== undefined) {
-        this.data[i + 1] = this.data[i];
-        
-        console.log(this.data)
-      }
 
     }
     this.data[0] = val;
